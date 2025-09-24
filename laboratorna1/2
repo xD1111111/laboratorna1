@@ -1,0 +1,11 @@
+'use strict';
+const array = [false, 'JavaScript', 99, -7, 0, true, 'YouTube', 3.1415, 'Steam', -1000, 'minecraft', false];
+console.log('Array:', array);
+const typesCount = { number: 0,string: 0,boolean: 0};
+for (const el of array) {
+  const type = typeof el;     
+  if (type in typesCount) {   
+    typesCount[type]++;       
+  }
+}
+console.log(typesCount);

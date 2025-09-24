@@ -1,0 +1,7 @@
+
+'use strict';
+const inc = (x) => x + 3;
+console.log (inc(7));
+const obj = { wood:100};
+inc(obj);
+console.dir(obj);
